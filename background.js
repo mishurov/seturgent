@@ -1,1 +1,3 @@
-browser.seturgent.start();
+browser.seturgent.onMessage.addListener(function() {
+  browser.seturgent.getAttention();
+});

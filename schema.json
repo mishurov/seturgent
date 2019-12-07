@@ -3,9 +3,18 @@
     "namespace": "seturgent",
     "functions": [
       {
-        "name": "start",
+        "name": "getAttention",
         "type": "function",
+        "description": "Sets the urgent flag.",
         "async": true,
+        "parameters": []
+      }
+    ],
+    "events": [
+      {
+        "name": "onMessage",
+        "type": "function",
+        "description": "Fires when an inbox message arrived.",
         "parameters": []
       }
     ]
