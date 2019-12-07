@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Seturgent",
+  "description": "Sets the urgent flag (X11) of the Thunderbird window under Linux in case of new messages. Does ignore special folders like Drafts, Junk and such.",
+  "version": "3.1",
+  "author": "Benjamin Oesterle and Max Rosin",
+  "legacy": {
+    "type": "xul"
+  },
+  "icons": {
+    "32": "chrome/skin/icon32.png",
+    "48": "chrome/skin/icon48.png",
+    "64": "chrome/skin/icon64.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "seturgent@merlino.uy",
+      "strict_min_version": "60.0"
+    }
+  }
+}
