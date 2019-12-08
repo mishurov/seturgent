@@ -11,4 +11,4 @@ I can't convert it completely to a MailExtension since the API hasn't got an eve
 
 The original addon: <https://addons.thunderbird.net/en-US/thunderbird/addon/seturgent-new/>
 
-The .xpi file on the [releases page](https://github.com/mishurov/seturgent/releases).
+The .xpi files are on the [releases page](https://github.com/mishurov/seturgent/releases).
