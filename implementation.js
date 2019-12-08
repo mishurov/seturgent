@@ -6,12 +6,6 @@ var seturgent = class extends ExtensionCommon.ExtensionAPI {
   getAPI(context) {
     return {
       seturgent: {
-        async getAttention() {
-          var recentWindow = Services.wm.getMostRecentWindow("mail:3pane");
-          if (recentWindow) {
-            recentWindow.getAttention();
-          }
-        },
         onMessage: new ExtensionCommon.EventManager({
           context,
           name: "seturgent.onMessage",

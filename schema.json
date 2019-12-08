@@ -1,15 +1,6 @@
 [
   {
     "namespace": "seturgent",
-    "functions": [
-      {
-        "name": "getAttention",
-        "type": "function",
-        "description": "Sets the urgent flag.",
-        "async": true,
-        "parameters": []
-      }
-    ],
     "events": [
       {
         "name": "onMessage",
