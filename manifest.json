@@ -21,7 +21,9 @@
     ]
   },
   "permissions": [
-    "tabs"
+    "tabs",
+    "accountsRead",
+    "messagesRead"
   ],
   "experiment_apis": {
     "seturgent": {

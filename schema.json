@@ -3,10 +3,16 @@
     "namespace": "seturgent",
     "events": [
       {
-        "name": "onMessage",
+        "name": "onMessageArrived",
         "type": "function",
-        "description": "Fires when an inbox message arrived.",
-        "parameters": []
+        "description": "Fires when an message arrived.",
+        "parameters": [
+          {
+            "name": "messageHeader",
+            "type": "object",
+            "description": "A MessageHeader of the message arrived."
+          }
+        ]
       }
     ]
   }
