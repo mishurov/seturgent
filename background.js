@@ -10,7 +10,7 @@ const excludedFolders = [
   'outbox',
 ];
 
-browser.seturgent.onMessageArrived.addListener(function(messageHeader) {
+browser.seturgent.onMessageArrived.addListener(messageHeader => {
   if (!excludedFolders.includes(messageHeader.folder.type))
     getAttention();
 });
