@@ -10,15 +10,16 @@ const excludedFolders = [
   'outbox',
 ];
 
+
 browser.seturgent.onMessageArrived.addListener(messageHeader => {
   if (!excludedFolders.includes(messageHeader.folder.type))
     getAttention();
 });
 
+
 function getAttention() {
-  browser.tabs.query({mailTab: true}).then(tabs => {
+  browser.mailTabs.query({}).then(tabs => {
     if (tabs.length)
       browser.windows.update(tabs[0].windowId, {drawAttention: true});
   });
 }
-

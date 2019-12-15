@@ -21,8 +21,6 @@
     ]
   },
   "permissions": [
-    "tabs",
-    "accountsRead",
     "messagesRead"
   ],
   "experiment_apis": {
