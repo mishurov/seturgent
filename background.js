@@ -11,8 +11,8 @@ const excludedFolders = [
 ];
 
 
-browser.seturgent.onMessageArrived.addListener(messageHeader => {
-  if (!excludedFolders.includes(messageHeader.folder.type))
+browser.messages.onNewMailReceived.addListener((folder, messageList) => {
+  if (!excludedFolders.includes(folder.type))
     getAttention();
 });
 
