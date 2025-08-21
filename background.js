@@ -11,7 +11,7 @@ const excludedFolders = [
 ];
 
 
-browser.messages.onNewMailReceived.addListener((folder, messageList) => {
+browser.messages.onNewMailReceived.addListener((folder, messages) => {
   if (!excludedFolders.includes(folder.type))
     getAttention();
 });
@@ -20,6 +20,6 @@ browser.messages.onNewMailReceived.addListener((folder, messageList) => {
 function getAttention() {
   browser.mailTabs.query({}).then(tabs => {
     if (tabs.length)
-      browser.windows.update(tabs[0].windowId, {drawAttention: true});
+      browser.windows.update(tabs[0].windowId, {drawAttention: true, focused: true});
   });
 }

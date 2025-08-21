@@ -1,9 +1,11 @@
 seturgent
 =========
 
-### For Thunderbird 68+
+### For Thunderbird 128+
 
-Sets the urgent flag (X11) of the Thunderbird window under Linux in case of new messages. Does ignore special folders like Drafts, Junk and such. 
+Sets the urgent flag (X11, Wayland) of the Thunderbird window under Linux in case of new messages. Does ignore special folders like Drafts, Junk and such. 
+
+[Version 6.0](https://github.com/mishurov/seturgent/tree/6.0) uses Manifest Version 3. Sets `focused: true` to draw attention in Sway. Minimum Thunderbird version is 128
 
 [Version 5.0](https://github.com/mishurov/seturgent/tree/5.0) uses MailExtensions API. Since [onNewMailReceived](https://thunderbird-webextensions.readthedocs.io/en/latest/messages.html#onnewmailreceived-folder-messages) event had been implemented firstly in Thunderbird 75, this is the minimum Thunderbird version it supports.
 
